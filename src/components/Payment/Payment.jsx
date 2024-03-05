@@ -33,9 +33,12 @@ export default function Payment() {
         "city": document.getElementById('city').value
         }
   }
-  axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://elnage.github.io/FreshCart/%23#/` , userData , {
+  axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}` , userData , {
     headers: {
       token: localStorage.getItem('tkn')
+    },
+    params: {
+      url: `https://elnage.github.io/FreshCart/#`
     }
   }).then((ree)=> {
     window.open(ree.data.session.url , '_self')
