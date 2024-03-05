@@ -24,7 +24,7 @@ import ForgetPassword from "./components/ForgetPassword/ForgetPassword";
 import Verifycode from "./components/Verifycode/Verifycode";
 import ResetPassword from "./components/ResetPassword/ResetPassword";
  
-const router = createBrowserRouter( 
+const router = createHashRouter( 
   [
     { path: '' , element: <Layout/> , children: [
       {path: '' , element: <ProtectedRoute>

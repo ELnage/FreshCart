@@ -38,7 +38,7 @@ export default function Payment() {
       token: localStorage.getItem('tkn')
     },
     params: {
-      url: `http://localhost:3000`
+      url: `https://elnage.github.io/#`
     }
   }).then((ree)=> {
     window.open(ree.data.session.url , '_self')
