@@ -51,7 +51,7 @@ export default function BrandProducts() {
   return <>
       <Helmet>
         
-        <title>{data.data.data[0].brand.name}</title>
+        <title>{data.data.data[0]?.brand.name}</title>
   </Helmet>
   <div className="container py-4">
     <div className="row">

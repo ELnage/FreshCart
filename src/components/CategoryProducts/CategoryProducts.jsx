@@ -51,7 +51,7 @@ export default function CategoryProducts() {
   return <>
       <Helmet>
         
-        <title>{data.data.data[0].category.name}</title>
+        <title>{data.data.data[0]?.category.name}</title>
   </Helmet>
   <div className="container py-4">
     <div className="row">
