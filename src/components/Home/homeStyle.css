@@ -1,0 +1,41 @@
+.heart {
+  right: -50px;
+  transition: 0.3s;
+  z-index: 5;
+  top: 5px;
+}
+.product:hover .heart {
+  right: 5px;
+}
+.shop {
+  left: -50px;
+  transition: 0.3s;
+  z-index: 5;
+  top: 5px;
+}
+.product:hover .shop {
+  left: 5px;
+}
+
+.dis::after {
+  content: attr(data-dis);
+  position: absolute;
+  top: -4px;
+  left: 104%;
+  text-decoration: line-through;
+  font-size: 15px;
+}
+.discount {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: var(--main-color);
+  padding: 5px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}

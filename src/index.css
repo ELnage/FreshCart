@@ -1,0 +1,141 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Encode Sans Expanded", sans-serif;
+  --rating-color: #ffc908;
+}
+
+body {
+  font-family: var(--font-family) !important;
+  background-image: url(../src/assets/images/light-patten.svg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 91px;
+}
+.rating-color {
+  color: var(--rating-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+.product {
+  overflow: hidden;
+  border: solid 1px #f8f8f8;
+  transition: 0.1s;
+  border-radius: 5px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.product img {
+  mix-blend-mode: multiply;
+}
+.mix-blend {
+  mix-blend-mode: multiply;
+}
+.product:hover {
+  box-shadow: var(--shadow);
+  border: solid 1px var(--main-color);
+}
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.font-sm {
+  font-size: 14px;
+}
+.text-main {
+  color: var(--main-color);
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+/* .bg-main:hover {
+  background-color: #1abd1a !important;
+} */
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+
+.inp:focus {
+  border-color: var(--main-color);
+  box-shadow: var(--shadow);
+}
+i {
+  cursor: pointer;
+}
+.bg-gray {
+  background-color: #f8f8f8;
+}
+.right-0 {
+  right: 0;
+}
+
+.shadow {
+  box-shadow: var(--shadow);
+}
+.bg-sec {
+  background-color: #7b9972;
+}
+.bg-sec:hover {
+  background-color: #8bb080;
+}
+.slick-arrow::before {
+  color: var(--main-color) !important;
+}
+.slick-dots li.slick-active button:before {
+  color: var(--main-color) !important;
+}
+.main-border {
+  border: solid 1px var(--main-color);
+}
+button:disabled {
+  cursor: no-drop;
+}
+.form-bg {
+  background-color: #46464626;
+  /* border: 1px solid var(--main-color); */
+  box-shadow: 0 0 10px #0aad0a8f !important;
+}
+.text-red {
+  color: red !important;
+}
+.min-100vh {
+  min-height: 100vh;
+}
+.nav-link {
+  margin-inline: 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.nav-link.active,
+.nav-link:hover {
+  background-color: var(--main-color);
+  color: white !important;
+  font-weight: 600;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
