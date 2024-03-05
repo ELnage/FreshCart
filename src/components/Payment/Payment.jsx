@@ -38,6 +38,7 @@ export default function Payment() {
       token: localStorage.getItem('tkn')
     },
     params: {
+      //gitHup Page
       url: `https://elnage.github.io/FreshCart/#`
     }
   }).then((ree)=> {
